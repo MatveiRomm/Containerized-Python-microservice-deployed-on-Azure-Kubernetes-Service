@@ -8,3 +8,6 @@ app = Flask(__name__)
 @app.route("/")
 def summary():
     return jsonify(jsnData)
+
+if __name__ == "__main__":
+    app.run()
