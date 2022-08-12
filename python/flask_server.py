@@ -1,13 +1,12 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify
 import bitcoin_output
-
-jsnData = bitcoin_output.data
 
 app = Flask(__name__)
 
 @app.route("/")
 def summary():
-    return jsonify(jsnData)
+    return jsonify(bitcoin_output.showJson())
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
+
