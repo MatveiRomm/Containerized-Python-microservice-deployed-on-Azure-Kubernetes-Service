@@ -7,7 +7,7 @@ The main purpose of this microservice is to display actual value of 1 BitCoin in
 # Prerequisites:
 1. "Docker" to create an image from Dockerfile and be able to run it.
 2. "Kubectl" to manage our k8s cluster in the future.
-3. "Azure account" (with container registry and kubernetes service) where we will send the docker image and create the k8s cluster. 
+3. "Azure account" (with container registry and kubernetes service) where we will push the docker image and deploy the k8s cluster. 
 
 # Creating a docker image
 After installing Docker, you can build a docker image from a Dockerfile.
