@@ -12,7 +12,7 @@ The main purpose of this microservice is to display actual value of 1 BitCoin in
 # Creating a docker image
 After installing Docker, you can build a docker image from a Dockerfile.
 
-docker build -t <name/ver> .
+docker build -t <name:ver> .
 
 # Managing your Azure account
 
@@ -42,4 +42,4 @@ Find LoadBalancer and its external IP, through which we can get the actual JSON 
 
 The application uses a simple x-Api-Key to handle the password. Use it as a header with a password to get a response.
 
-curl -H "x-api-key: <password>" <external IP> 
+curl -H "x-api-key: [password]" [external IP] 
