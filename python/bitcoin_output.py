@@ -1,13 +1,14 @@
 from datetime import datetime 
 from requests import get
 
+apiEur = "https://api.coindesk.com/v1/bpi/currentprice.json"
+apiCzk = "https://api.coindesk.com/v1/bpi/currentprice/CZK.json"
+
 def showJson():
     # pull data in json format from api
-    apiEur = "https://api.coindesk.com/v1/bpi/currentprice.json"
     responseApiEur = get(apiEur)
     apiDataEur = responseApiEur.json()
     
-    apiCzk = "https://api.coindesk.com/v1/bpi/currentprice/CZK.json"
     responceApiCzk = get(apiCzk)
     apiDataCzk = responceApiCzk.json()
     
